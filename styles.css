@@ -1,0 +1,73 @@
+/* Fondo general */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Caja de la calculadora */
+.calculadora {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Pantalla */
+#pantalla {
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #2c2c44;
+  color: #fff;
+}
+
+/* Botones */
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+}
+
+button {
+  height: 70px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+/* Animación al presionar */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Colores */
+.numero {
+  background: #4e4e6e;
+  color: #fff;
+}
+
+.operador {
+  background: #ff9f0a;
+  color: #fff;
+}
+
+#clear {
+  background: #ff3b30;
+  color: #fff;
+}
+
+#igual {
+  background: #32d74b;
+  color: #fff;
+}
